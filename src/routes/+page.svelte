@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	let err = 0;
+	let board;
+</script>
+
+<h2>Errors: <span id="errors">{err}</span></h2>
+<div id="board" bind:this={board} />

@@ -1,0 +1,20 @@
+* {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#board {
+	height: 532px;
+	width: 475px;
+	margin: 0 auto;
+	background-color: green;
+	display: flex;
+	border: 10px solid lightgray;
+	flex-wrap: wrap;
+}
+
+.card {
+	height: 12px;
+	width: 90px;
+	margin: 2.5px;
+}
