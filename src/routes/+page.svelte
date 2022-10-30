@@ -94,7 +94,7 @@
 	};
 </script>
 
-<h2>Errors: <span id="errors">{err}</span> Matches: {matches}</h2>
+<h2>Errors: <span id="errors">{err}</span> Matches: <span id="matches">{matches}</span></h2>
 <div id="board" bind:this={board}>
 	{#if cardSet}
 		{#each cardSet as c}
@@ -109,3 +109,15 @@
 		{/each}
 	{/if}
 </div>
+
+<style>
+	h2 {
+		padding: 1rem;
+	}
+	#errors {
+		color: red;
+	}
+	#matches {
+		color: green;
+	}
+</style>
