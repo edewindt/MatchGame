@@ -8,13 +8,14 @@
 	width: 475px;
 	margin: 0 auto;
 	background-color: green;
-	display: flex;
+	display: grid;
 	border: 10px solid lightgray;
-	flex-wrap: wrap;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(4, 1fr);
 }
 
 .card {
-	height: 12px;
+	height: 120px;
 	width: 90px;
 	margin: 2.5px;
 }
