@@ -15,6 +15,11 @@
 }
 
 .card {
+	height: 100%;
+	width: 100%;
+}
+button {
+	background-color: transparent;
 	height: 120px;
 	width: 90px;
 	margin: 2.5px;
