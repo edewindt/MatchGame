@@ -71,6 +71,7 @@
 		cardSet = cs;
 		console.log(cardSet);
 	};
+
 	let q = [];
 	const butt = (n) => {
 		q = [...q, n];
@@ -92,6 +93,13 @@
 		}
 		console.log(q);
 	};
+	const reset = () => {
+		for (let i = 0; i < cardSet.length; i++) {
+			cardSet[i].b = false;
+			err = 0;
+			matches = 0;
+		}
+	};
 </script>
 
 <h2>Errors: <span id="errors">{err}</span> Matches: <span id="matches">{matches}</span></h2>
@@ -109,6 +117,7 @@
 		{/each}
 	{/if}
 </div>
+<button id="butt" on:click={reset}>Reset</button>
 
 <style>
 	h2 {
@@ -119,5 +128,10 @@
 	}
 	#matches {
 		color: green;
+	}
+	#butt {
+		width: 400px;
+		background-color: red;
+		font-size: 50px;
 	}
 </style>
